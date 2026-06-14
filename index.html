@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura Aesthetics Clinic | คลินิกเสริมความงาม ปรับรูปหน้า ดูแลผิวพรรณครบวงจร</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="canonical" href="https://www.auraclinicmockup.com/">
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="ออร่า แอสเธติกส์ คลินิก (Aura Aesthetics Clinic) บริการดูแลผิวพรรณ ปรับรูปหน้า ฟิลเลอร์ โบท็อกซ์ เลเซอร์ยกกระชับ โดยแพทย์ผู้เชี่ยวชาญ ปลอดภัย ได้มาตรฐานสากล">
   <meta name="keywords" content="คลินิกความงาม, ปรับรูปหน้า, เลเซอร์ยกกระชับ, ฟิลเลอร์, โบท็อกซ์, ทำทรีทเม้นท์, คลินิกความงาม กรุงเทพ, ผิวใส">
-  <meta name="author" content="Aura Aesthetics Clinic">
+  <meta name="author" content="AP Web Development">
   <meta name="robots" content="index, follow">
   
   <!-- Open Graph / Facebook -->
@@ -40,19 +42,18 @@
     "image": "assets/clinic-hero.png",
     "@id": "https://www.auraclinicmockup.com/#clinic",
     "url": "https://www.auraclinicmockup.com/",
-    "telephone": "+6621234567",
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123 ถนนสุขุมวิท แขวงคลองเตย",
-      "addressLocality": "กรุงเทพมหานคร",
+      "streetAddress": "อาคารที-วัน (T-One Building) ชั้น 20 ซอยสุขุมวิท 40 แขวงพระโขนง",
+      "addressLocality": "เขตคลองเตย กรุงเทพมหานคร",
       "postalCode": "10110",
       "addressCountry": "TH"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 13.736717,
-      "longitude": 100.560431
+      "latitude": 13.7231,
+      "longitude": 100.5794
     },
     "openingHoursSpecification": [
       {
@@ -72,7 +73,7 @@
     ],
     "sameAs": [
       "https://www.facebook.com/auraclinicmockup",
-      "https://line.me/R/ti/p/@auraclinic"
+      "https://line.me/ti/p/11aprily"
     ]
   }
   </script>
@@ -241,10 +242,10 @@
 
         <!-- Filter tabs -->
         <div class="services-filter reveal">
-          <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
-          <button class="filter-btn" data-filter="contour">ปรับรูปหน้า</button>
-          <button class="filter-btn" data-filter="skin">ดูแลผิวพรรณ</button>
-          <button class="filter-btn" data-filter="lifting">ยกกระชับ</button>
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+          <button class="filter-btn" data-filter="contour" aria-pressed="false">ปรับรูปหน้า</button>
+          <button class="filter-btn" data-filter="skin" aria-pressed="false">ดูแลผิวพรรณ</button>
+          <button class="filter-btn" data-filter="lifting" aria-pressed="false">ยกกระชับ</button>
         </div>
 
         <!-- Services Grid -->
@@ -252,7 +253,7 @@
           <!-- Service 1 -->
           <div class="service-card" data-category="contour">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-treatment.png" alt="Botox & Filler Contour" class="service-img" loading="lazy">
+              <img src="assets/clinic-treatment.png" alt="Botox & Filler Contour" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">ฮิตที่สุด</span>
             </div>
             <div class="service-body">
@@ -271,7 +272,7 @@
           <!-- Service 2 -->
           <div class="service-card" data-category="lifting">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-hero.png" alt="Ulthera Lifting" class="service-img" loading="lazy">
+              <img src="assets/clinic-hero.png" alt="Ultraformer III MPT Lifting" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">ยกกระชับ</span>
             </div>
             <div class="service-body">
@@ -290,7 +291,7 @@
           <!-- Service 3 -->
           <div class="service-card" data-category="skin">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-treatment.png" alt="Pico Laser Skin" class="service-img" loading="lazy">
+              <img src="assets/clinic-treatment.png" alt="Pico Laser Skin" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">กู้ผิวใส</span>
             </div>
             <div class="service-body">
@@ -309,7 +310,7 @@
           <!-- Service 4 -->
           <div class="service-card" data-category="skin">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-hero.png" alt="Aura Collagen Booster" class="service-img" loading="lazy">
+              <img src="assets/clinic-hero.png" alt="Aura Collagen Booster" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">หน้าใสฉ่ำ</span>
             </div>
             <div class="service-body">
@@ -328,7 +329,7 @@
           <!-- Service 5 -->
           <div class="service-card" data-category="contour">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-treatment.png" alt="Labioplasty Fat Reduction" class="service-img" loading="lazy">
+              <img src="assets/clinic-treatment.png" alt="Meso Fat Face Slimming" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">ปรับรูปหน้า</span>
             </div>
             <div class="service-body">
@@ -347,7 +348,7 @@
           <!-- Service 6 -->
           <div class="service-card" data-category="lifting">
             <div class="service-img-wrapper">
-              <img src="assets/clinic-hero.png" alt="Thread Lifting" class="service-img" loading="lazy">
+              <img src="assets/clinic-hero.png" alt="Thread Lifting" class="service-img" loading="lazy" width="370" height="220">
               <span class="service-badge">พรีเมียม</span>
             </div>
             <div class="service-body">
@@ -467,11 +468,11 @@
             <h3 class="before-after-title">ยกกระชับแก้ม & เหนียง (Ultraformer MPT)</h3>
             <div class="before-after-images">
               <div class="before-after-box">
-                <img src="assets/clinic-treatment.png" alt="ก่อนทำยกกระชับ">
+                <img src="assets/clinic-treatment.png" alt="ก่อนทำยกกระชับ" width="200" height="150" loading="lazy">
                 <div class="before-after-label">ก่อนทำ</div>
               </div>
               <div class="before-after-box">
-                <img src="assets/clinic-hero.png" alt="หลังทำยกกระชับ 1 เดือน">
+                <img src="assets/clinic-hero.png" alt="หลังทำยกกระชับ 1 เดือน" width="200" height="150" loading="lazy">
                 <div class="before-after-label">หลังทำ 1 เดือน</div>
               </div>
             </div>
@@ -483,11 +484,11 @@
             <h3 class="before-after-title">ปรับรูปคาง & ร่องแก้ม (Filler 2 cc)</h3>
             <div class="before-after-images">
               <div class="before-after-box">
-                <img src="assets/clinic-hero.png" alt="ก่อนเติมฟิลเลอร์">
+                <img src="assets/clinic-hero.png" alt="ก่อนเติมฟิลเลอร์" width="200" height="150" loading="lazy">
                 <div class="before-after-label">ก่อนทำ</div>
               </div>
               <div class="before-after-box">
-                <img src="assets/clinic-treatment.png" alt="หลังทำทันที">
+                <img src="assets/clinic-treatment.png" alt="หลังทำทันที" width="200" height="150" loading="lazy">
                 <div class="before-after-label">หลังทำทันที</div>
               </div>
             </div>
@@ -511,13 +512,14 @@
           <!-- Contact info details -->
           <div class="contact-info-panel reveal">
             <h3>ข้อมูลการติดต่อ</h3>
+            <p style="margin-bottom: 1rem;"><strong>ผู้ดูแลระบบ / ผู้ติดต่อ (Contact Person):</strong> AP Web Development</p>
             <p>หากคุณมีคำถามใดๆ หรือต้องการประเมินปัญหาผิวในเบื้องต้น สามารถติดต่อเราผ่านช่องทางต่างๆ หรือส่งข้อความผ่านฟอร์มได้เลยค่ะ</p>
             
             <div class="contact-info-item">
               <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
               <div class="contact-info-text">
                 <h4>เบอร์โทรศัพท์</h4>
-                <p><a href="tel:021234567">02-123-4567</a> หรือ <a href="tel:0898765432">089-876-5432</a></p>
+                <p>ติดต่อเพื่อขอใบเสนอราคา (Contact for quotation)</p>
               </div>
             </div>
 
@@ -525,7 +527,15 @@
               <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
               <div class="contact-info-text">
                 <h4>อีเมล</h4>
-                <p><a href="mailto:info@auraclinic.com">info@auraclinic.com</a></p>
+                <p><a href="mailto:tonporza01@gmail.com">tonporza01@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-brands fa-line"></i></div>
+              <div class="contact-info-text">
+                <h4>Line ID</h4>
+                <p><a href="https://line.me/ti/p/11aprily" target="_blank" rel="noopener noreferrer">11aprily</a></p>
               </div>
             </div>
 
@@ -533,7 +543,7 @@
               <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div class="contact-info-text">
                 <h4>ที่ตั้งคลินิก</h4>
-                <p>123 อาคารออร่าสเปซ ชั้น 1 ถนนสุขุมวิท (ใกล้ BTS อโศก ทางออก 3) แขวงคลองเตย เขตวัฒนา กรุงเทพฯ 10110</p>
+                <p>อาคารที-วัน (T-One Building) ชั้น 20 ซอยสุขุมวิท 40 แขวงพระโขนง เขตคลองเตย กรุงเทพฯ 10110 (ใกล้ BTS ทองหล่อ ทางออก 4)</p>
               </div>
             </div>
 
@@ -566,7 +576,7 @@
 
               <div class="form-group">
                 <label for="phone">เบอร์โทรศัพท์ *</label>
-                <input type="tel" id="phone" name="phone" class="form-control" placeholder="เช่น 0891234567" required pattern="[0-9]{9,10}">
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="เช่น 0891234567" required pattern="^0[0-9]{8,9}$">
               </div>
 
               <div class="form-group">
@@ -606,7 +616,7 @@
   </div>
 
   <!-- Sticky Line Button -->
-  <a href="https://line.me/R/ti/p/@auraclinic" class="line-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on LINE">
+  <a href="https://line.me/ti/p/11aprily" class="line-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on LINE">
     <i class="fa-brands fa-line"></i>
   </a>
 
@@ -635,17 +645,20 @@
         <div class="footer-social">
           <h4>ช่องทางโซเชียลมีเดีย</h4>
           <div class="footer-social-icons">
-            <a href="https://facebook.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://line.me" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
-            <a href="https://youtube.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://facebook.com/apwebdev" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com/apwebdev" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://line.me/ti/p/11aprily" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
+            <a href="https://youtube.com/@apwebdev" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
-          <p style="margin-top: 1rem;">Line ID: @auraclinic</p>
+          <p style="margin-top: 1rem;">Line ID: 11aprily</p>
         </div>
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2026 Aura Aesthetics Clinic. All Rights Reserved. | เลขใบอนุญาตประกอบกิจการ 10104xxxx</p>
+        <p>&copy; 2026 Aura Aesthetics Clinic. All Rights Reserved. | เลขใบอนุญาตประกอบกิจการ: 10104000100</p>
+        <p style="margin-top: 0.85rem; font-size: 0.85rem; color: var(--primary-gold); letter-spacing: 0.05em;">
+          [ Portfolio Demo Project ] Created by <strong>AP Web Development</strong>
+        </p>
       </div>
     </div>
   </footer>

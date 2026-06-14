@@ -81,16 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
   handleScroll();
 
   // ==========================================
-  // 3. SERVICES FILTERING
+  // 3. SERVICES FILTERING & ACCESSIBILITY
   // ==========================================
   const filterBtns = document.querySelectorAll('.filter-btn');
   const serviceCards = document.querySelectorAll('.service-card');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active class on buttons
-      filterBtns.forEach(b => b.classList.remove('active'));
+      // Toggle active class and aria-pressed attributes on buttons
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       const filterValue = btn.getAttribute('data-filter');
 
@@ -127,6 +131,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const toast = document.getElementById('toast');
 
+  // Prevent booking appointments on past dates (set minimum date to today)
+  const dateInputEl = document.getElementById('date');
+  if (dateInputEl) {
+    const today = new Date().toISOString().split('T')[0];
+    dateInputEl.setAttribute('min', today);
+  }
+
   const showToast = () => {
     toast.classList.add('show');
     setTimeout(() => {
@@ -145,8 +156,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageInput = document.getElementById('message');
     const submitBtn = contactForm.querySelector('.form-submit-btn');
 
-    // Simple validation (Phone pattern check)
-    const phonePattern = /^[0-9]{9,10}$/;
+    // Standard Thai phone validation (starts with 0, 9 or 10 digits total)
+    const phonePattern = /^0[0-9]{8,9}$/;
     if (!phonePattern.test(phoneInput.value.trim())) {
       alert('กรุณากรอกเบอร์โทรศัพท์ที่ถูกต้อง (เช่น 0891234567)');
       phoneInput.focus();
