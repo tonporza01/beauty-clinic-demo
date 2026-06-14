@@ -1,0 +1,11 @@
+{
+  "name": "aura-clinic-website",
+  "version": "1.0.0",
+  "description": "Premium Beauty Clinic Website Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 3000",
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {}
+}

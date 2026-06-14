@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Aesthetics Clinic | คลินิกเสริมความงาม ปรับรูปหน้า ดูแลผิวพรรณครบวงจร</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="ออร่า แอสเธติกส์ คลินิก (Aura Aesthetics Clinic) บริการดูแลผิวพรรณ ปรับรูปหน้า ฟิลเลอร์ โบท็อกซ์ เลเซอร์ยกกระชับ โดยแพทย์ผู้เชี่ยวชาญ ปลอดภัย ได้มาตรฐานสากล">
+  <meta name="keywords" content="คลินิกความงาม, ปรับรูปหน้า, เลเซอร์ยกกระชับ, ฟิลเลอร์, โบท็อกซ์, ทำทรีทเม้นท์, คลินิกความงาม กรุงเทพ, ผิวใส">
+  <meta name="author" content="Aura Aesthetics Clinic">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.auraclinicmockup.com/">
+  <meta property="og:title" content="Aura Aesthetics Clinic | คลินิกเสริมความงามระดับพรีเมียม">
+  <meta property="og:description" content="ดูแลผิวพรรณ ปรับรูปหน้า ฟิลเลอร์ โบท็อกซ์ เลเซอร์ยกกระชับ โดยแพทย์ผู้เชี่ยวชาญ ปลอดภัย ได้มาตรฐานสากล">
+  <meta property="og:image" content="assets/clinic-hero.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.auraclinicmockup.com/">
+  <meta property="twitter:title" content="Aura Aesthetics Clinic | คลินิกเสริมความงามระดับพรีเมียม">
+  <meta property="twitter:description" content="ดูแลผิวพรรณ ปรับรูปหน้า ฟิลเลอร์ โบท็อกซ์ เลเซอร์ยกกระชับ โดยแพทย์ผู้เชี่ยวชาญ ปลอดภัย ได้มาตรฐานสากล">
+  <meta property="twitter:image" content="assets/clinic-hero.png">
+
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) for Local Business SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Aura Aesthetics Clinic",
+    "image": "assets/clinic-hero.png",
+    "@id": "https://www.auraclinicmockup.com/#clinic",
+    "url": "https://www.auraclinicmockup.com/",
+    "telephone": "+6621234567",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 ถนนสุขุมวิท แขวงคลองเตย",
+      "addressLocality": "กรุงเทพมหานคร",
+      "postalCode": "10110",
+      "addressCountry": "TH"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 13.736717,
+      "longitude": 100.560431
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "11:00",
+        "closes": "20:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/auraclinicmockup",
+      "https://line.me/R/ti/p/@auraclinic"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVIGATION HEADER
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo-wrapper" aria-label="Aura Aesthetics Clinic Home">
+        <span class="logo-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <span class="logo-text">AURA CLINIC</span>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="active">หน้าแรก</a></li>
+          <li><a href="#about">เกี่ยวกับเรา</a></li>
+          <li><a href="#services">บริการของเรา</a></li>
+          <li><a href="#reviews">รีวิว</a></li>
+          <li><a href="#contact">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">จองคิวรับบริการ</a>
+      </div>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button class="menu-btn" id="menu-btn" aria-label="Toggle Mobile Navigation" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link active">หน้าแรก</a></li>
+      <li><a href="#about" class="mobile-link">เกี่ยวกับเรา</a></li>
+      <li><a href="#services" class="mobile-link">บริการของเรา</a></li>
+      <li><a href="#reviews" class="mobile-link">รีวิว</a></li>
+      <li><a href="#contact" class="mobile-link">ติดต่อเรา</a></li>
+    </ul>
+    <div class="mobile-nav-cta">
+      <a href="#contact" class="btn btn-primary mobile-link">จองคิวปรึกษาแพทย์ฟรี</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         HOME / HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content reveal active">
+            <span class="hero-tagline">Premium Aesthetics Clinic</span>
+            <h1 class="hero-title">
+              เผยความมั่นใจ<br>ในแบบที่<span>ดีที่สุดของคุณ</span>
+            </h1>
+            <p class="hero-description">
+              ยกระดับความสวยงามอย่างเป็นธรรมชาติ ด้วยเทคโนโลยีที่ได้มาตรฐานระดับสากล และทีมแพทย์ผู้เชี่ยวชาญที่ออกแบบความงามเฉพาะบุคคลเพื่อคุณโดยเฉพาะ
+            </p>
+            <div class="hero-ctas">
+              <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> จองปรึกษาแพทย์ฟรี</a>
+              <a href="#services" class="btn btn-secondary">ดูบริการของเรา</a>
+            </div>
+            <div class="hero-badge-wrapper">
+              <div class="hero-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>เครื่องแท้ผ่าน อย. 100%</span>
+              </div>
+              <div class="hero-badge">
+                <i class="fa-solid fa-user-doctor"></i>
+                <span>ดูแลโดยแพทย์เฉพาะทาง</span>
+              </div>
+              <div class="hero-badge">
+                <i class="fa-solid fa-award"></i>
+                <span>รางวัลมาตรฐานระดับประเทศ</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-wrapper reveal active">
+            <div class="hero-image-border">
+              <img src="assets/clinic-hero.png" alt="Aura Aesthetics Clinic Luxury Lobby" class="hero-img" width="500" height="500">
+            </div>
+            <!-- Floating badge -->
+            <div class="hero-floating-card glass-panel">
+              <div class="hero-floating-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="hero-floating-text">
+                <h4>15,000+</h4>
+                <p>ลูกค้าพึงพอใจและกลับมาซ้ำ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrapper reveal">
+            <img src="assets/clinic-treatment.png" alt="การทำทรีทเม้นท์ดูแลผิวโดยแพทย์ผู้เชี่ยวชาญ" class="about-img-main" width="450" height="450">
+            <div class="about-experience-badge">
+              <span>10+</span>
+              <span>ปีประสบการณ์</span>
+            </div>
+          </div>
+          <div class="about-content reveal">
+            <span class="section-subtitle">About Us</span>
+            <h2 class="section-title">เกี่ยวกับ ออร่า คลินิก</h2>
+            <h3>มาตรฐานความปลอดภัยระดับเวิลด์คลาส เพื่อผลลัพธ์ที่คุณมั่นใจ</h3>
+            <p class="about-text">
+              ที่ ออร่า แอสเธติกส์ คลินิก เรามุ่งมั่นที่จะส่งมอบความงามที่ปลอดภัยและได้มาตรฐานสูงสุด เครื่องมือแพทย์ทุกชิ้น ตัวยาทุกตัว (Botox, Filler, Skin Booster) นำเข้าอย่างถูกต้องตามกฎหมาย ตรวจสอบได้ทุกขวด เพื่อให้ลูกค้าทุกท่านมั่นใจในความปลอดภัยและเห็นผลลัพธ์การเปลี่ยนแปลงที่ดีที่สุด
+            </p>
+            <div class="about-features">
+              <div class="about-feature-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <div>
+                  <h4>แพทย์ประเมินเองทุกเคส</h4>
+                  <p>เราไม่ยัดเยียดคอร์ส แพทย์วิเคราะห์ปัญหาผิวหน้าและโครงหน้าแบบ Case-by-Case เพื่อผลลัพธ์ที่ตรงจุด</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                  <h4>ความปลอดภัย 100%</h4>
+                  <p>ใช้นวัตกรรมระดับ Gold Standard ผ่านมาตรฐาน อย. ไทย สหรัฐอเมริกา (US FDA) และยุโรป</p>
+                </div>
+              </div>
+              <div class="about-feature-item">
+                <i class="fa-solid fa-sparkles"></i>
+                <div>
+                  <h4>บริการระดับพรีเมียม</h4>
+                  <p>ดูแลอย่างใกล้ชิดตั้งแต่การต้อนรับ การรักษา ตลอดจนการติดตามผลการรักษาหลังรับบริการ</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">ทำนัดปรึกษาแพทย์</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SERVICES SECTION
+         ========================================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-title-wrapper reveal">
+          <span class="section-subtitle">Our Services</span>
+          <h2 class="section-title">บริการยอดนิยม</h2>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="services-filter reveal">
+          <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+          <button class="filter-btn" data-filter="contour">ปรับรูปหน้า</button>
+          <button class="filter-btn" data-filter="skin">ดูแลผิวพรรณ</button>
+          <button class="filter-btn" data-filter="lifting">ยกกระชับ</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid reveal">
+          <!-- Service 1 -->
+          <div class="service-card" data-category="contour">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-treatment.png" alt="Botox & Filler Contour" class="service-img" loading="lazy">
+              <span class="service-badge">ฮิตที่สุด</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">V-Shape Botox & Filler</h3>
+              <p class="service-desc">ปรับรูปหน้าให้มีมิติ ลดริ้วรอย จุดด่างดำ และเติมเต็มร่องลึกด้วยโบท็อกซ์และฟิลเลอร์แบรนด์ดังระดับโลก ของแท้ตรวจสอบได้ทุกกล่อง</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿4,900.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card" data-category="lifting">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-hero.png" alt="Ulthera Lifting" class="service-img" loading="lazy">
+              <span class="service-badge">ยกกระชับ</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Ultraformer III MPT</h3>
+              <p class="service-desc">นวัตกรรมยกกระชับผิวหน้า สลายไขมันส่วนเกิน และกระตุ้นคอลลาเจนใต้ชั้นผิวลึกถึงชั้น SMAS โดยไม่ต้องผ่าตัด เจ็บน้อย ไม่ต้องพักฟื้น</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿8,900.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card" data-category="skin">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-treatment.png" alt="Pico Laser Skin" class="service-img" loading="lazy">
+              <span class="service-badge">กู้ผิวใส</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Discovery Pico Laser</h3>
+              <p class="service-desc">รักษาฝ้า กระ จุดด่างดำ รอยดำแดงจากสิว ลบรอยสัก และช่วยกระชับรูขุมขน ปรับสภาพผิวให้เรียบเนียนกระจ่างใสอย่างเห็นได้ชัด</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿5,500.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card" data-category="skin">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-hero.png" alt="Aura Collagen Booster" class="service-img" loading="lazy">
+              <span class="service-badge">หน้าใสฉ่ำ</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Aura Skin Booster</h3>
+              <p class="service-desc">เติมความชุ่มชื้นให้ผิวฉ่ำวาวสุขภาพดีสไตล์เกาหลี ด้วยการผลักวิตามินเข้มข้นและ Hyaluronic Acid เข้าสู่ผิวชั้นลึก เผยผิวกระจ่างใสอมชมพู</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿2,500.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card" data-category="contour">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-treatment.png" alt="Labioplasty Fat Reduction" class="service-img" loading="lazy">
+              <span class="service-badge">ปรับรูปหน้า</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">Meso Fat Face Slim</h3>
+              <p class="service-desc">สลายไขมันเฉพาะจุดบริเวณแก้มและเหนียง ช่วยปรับรูปหน้าให้กระชับเรียวสวยเป็นธรรมชาติ ตัวยาสูตรพรีเมียม ลงไว ไม่แสบ ไม่ช้ำ</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿1,900.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card" data-category="lifting">
+            <div class="service-img-wrapper">
+              <img src="assets/clinic-hero.png" alt="Thread Lifting" class="service-img" loading="lazy">
+              <span class="service-badge">พรีเมียม</span>
+            </div>
+            <div class="service-body">
+              <h3 class="service-title">ไหมโครงตาข่ายยกกระชับ</h3>
+              <p class="service-desc">ร้อยไหมยกกระชับโครงหน้า ปรับแก้มห้อย ร่องแก้มลึก ให้ยกตึงทันทีหลังทำ อยู่ได้นานกว่าไหมทั่วไปด้วยวัสดุพิเศษเกรดการแพทย์</p>
+              <div class="service-meta">
+                <div class="service-price">
+                  <span>ราคาเริ่มต้น</span>
+                  <span>฿12,900.-</span>
+                </div>
+                <a href="#contact" class="service-link">จองคิวปรึกษา <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         REVIEWS SECTION
+         ========================================== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-title-wrapper reveal">
+          <span class="section-subtitle">Client Reviews</span>
+          <h2 class="section-title">เสียงตอบรับจากลูกค้าจริง</h2>
+        </div>
+
+        <!-- Rating Summary Box -->
+        <div class="reviews-summary reveal">
+          <div class="reviews-summary-rating">4.9</div>
+          <div>
+            <div class="reviews-summary-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="reviews-summary-text">คะแนนเฉลี่ยจากลูกค้ามากกว่า 1,200+ รีวิว</p>
+          </div>
+          <div>
+            <p class="reviews-summary-text"><i class="fa-solid fa-badge-check" style="color: var(--primary-gold);"></i> รีวิวจากผู้ใช้บริการจริง 100%</p>
+          </div>
+        </div>
+
+        <!-- Reviews Cards Grid -->
+        <div class="reviews-grid reveal">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-content">
+              "คุณหมอน่ารักมากค่ะ ให้คำปรึกษาตรงจุด ไม่ยัดเยียดคอร์สเลย วันนี้มาทำฟิลเลอร์ใต้ตาและร่องแก้ม ผลลัพธ์ออกมาเป็นธรรมชาติมากค่ะ ไม่บวมไม่ช้ำเลย แนะนำที่นี่เลยค่ะ"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar-placeholder">น</div>
+              <div class="review-author-info">
+                <h4>คุณนลินรัตน์ ศรีสวัสดิ์</h4>
+                <span>ผู้รับบริการปรับรูปหน้า</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-content">
+              "ประทับใจ Ultraformer III ที่นี่มากครับ ทำแล้วเหนียงกระชับขึ้น หน้าวีขึ้นชัดเจนเลย พนักงานบริการดีมาก สถานที่สะอาด สะดวกสบาย คุณหมอมือเบาสุดๆ ครับ"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar-placeholder">ธ</div>
+              <div class="review-author-info">
+                <h4>คุณธนภัทร เลิศวิจิตร</h4>
+                <span>ผู้รับบริการยกกระชับ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p class="review-content">
+              "เป็นสิวและรอยแดงเรื้อรังมานาน ได้มาทำ Pico Laser ที่นี่ไป 3 ครั้ง รอยจางลงเยอะมาก รูขุมขนกระชับขึ้น ผิวหน้าดูใสขึ้นอย่างเห็นได้ชัดเลยค่ะ คุณหมอแนะนำดีมากค่ะ"
+            </p>
+            <div class="review-author">
+              <div class="review-avatar-placeholder">พ</div>
+              <div class="review-author-info">
+                <h4>คุณพิมลดา เดชาชัย</h4>
+                <span>ผู้รับบริการเลเซอร์ผิวพรรณ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Before / After Gallery -->
+        <div class="before-after-grid reveal">
+          <!-- Card 1 -->
+          <div class="before-after-card">
+            <h3 class="before-after-title">ยกกระชับแก้ม & เหนียง (Ultraformer MPT)</h3>
+            <div class="before-after-images">
+              <div class="before-after-box">
+                <img src="assets/clinic-treatment.png" alt="ก่อนทำยกกระชับ">
+                <div class="before-after-label">ก่อนทำ</div>
+              </div>
+              <div class="before-after-box">
+                <img src="assets/clinic-hero.png" alt="หลังทำยกกระชับ 1 เดือน">
+                <div class="before-after-label">หลังทำ 1 เดือน</div>
+              </div>
+            </div>
+            <p class="before-after-desc">ผลลัพธ์หลังทำแก้มและเหนียงยกกระชับ กรอบหน้าชัดขึ้นอย่างเป็นธรรมชาติ</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="before-after-card">
+            <h3 class="before-after-title">ปรับรูปคาง & ร่องแก้ม (Filler 2 cc)</h3>
+            <div class="before-after-images">
+              <div class="before-after-box">
+                <img src="assets/clinic-hero.png" alt="ก่อนเติมฟิลเลอร์">
+                <div class="before-after-label">ก่อนทำ</div>
+              </div>
+              <div class="before-after-box">
+                <img src="assets/clinic-treatment.png" alt="หลังทำทันที">
+                <div class="before-after-label">หลังทำทันที</div>
+              </div>
+            </div>
+            <p class="before-after-desc">คางเรียวยาวรับกับใบหน้า ร่องลึกดูตื้นขึ้นทันทีและใบหน้าดูเด็กลง</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-title-wrapper reveal">
+          <span class="section-subtitle">Get in Touch</span>
+          <h2 class="section-title">นัดหมายปรึกษาแพทย์</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact info details -->
+          <div class="contact-info-panel reveal">
+            <h3>ข้อมูลการติดต่อ</h3>
+            <p>หากคุณมีคำถามใดๆ หรือต้องการประเมินปัญหาผิวในเบื้องต้น สามารถติดต่อเราผ่านช่องทางต่างๆ หรือส่งข้อความผ่านฟอร์มได้เลยค่ะ</p>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-info-text">
+                <h4>เบอร์โทรศัพท์</h4>
+                <p><a href="tel:021234567">02-123-4567</a> หรือ <a href="tel:0898765432">089-876-5432</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-info-text">
+                <h4>อีเมล</h4>
+                <p><a href="mailto:info@auraclinic.com">info@auraclinic.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-info-text">
+                <h4>ที่ตั้งคลินิก</h4>
+                <p>123 อาคารออร่าสเปซ ชั้น 1 ถนนสุขุมวิท (ใกล้ BTS อโศก ทางออก 3) แขวงคลองเตย เขตวัฒนา กรุงเทพฯ 10110</p>
+              </div>
+            </div>
+
+            <!-- Operating Hours Table -->
+            <div>
+              <h4>เวลาทำการ</h4>
+              <table class="hours-table">
+                <tr>
+                  <td>วันจันทร์ - วันศุกร์</td>
+                  <td>11:00 - 20:00 น.</td>
+                </tr>
+                <tr class="highlighted">
+                  <td>วันเสาร์ - วันอาทิตย์</td>
+                  <td>10:00 - 20:30 น.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Contact Form Panel -->
+          <div class="contact-form-panel reveal">
+            <h3 class="contact-form-title">ส่งข้อความหาเรา</h3>
+            <p class="contact-form-subtitle">กรอกข้อมูลด้านล่าง เจ้าหน้าที่จะติดต่อกลับเพื่อยืนยันวันนัดหมายภายใน 24 ชม.</p>
+            
+            <form id="contact-form" autocomplete="on">
+              <div class="form-group">
+                <label for="name">ชื่อ - นามสกุล *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="เช่น คุณสมชาย รักดี" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">เบอร์โทรศัพท์ *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="เช่น 0891234567" required pattern="[0-9]{9,10}">
+              </div>
+
+              <div class="form-group">
+                <label for="service">บริการที่สนใจ</label>
+                <select id="service" name="service" class="form-control">
+                  <option value="">-- กรุณาเลือกบริการ --</option>
+                  <option value="botox-filler">ปรับรูปหน้า V-Shape (Botox / Filler)</option>
+                  <option value="lifting">ยกกระชับหน้า (Ultraformer III)</option>
+                  <option value="laser">รักษาผิวพรรณ/รอยสิว (Pico Laser)</option>
+                  <option value="skin-booster">หน้าใสฉ่ำวาว (Skin Booster)</option>
+                  <option value="other">ปรึกษาปัญหาผิวอื่นๆ</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="date">วันที่ต้องการจองคิว</label>
+                <input type="date" id="date" name="date" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="message">รายละเอียดเพิ่มเติม (ถ้ามี)</label>
+                <textarea id="message" name="message" class="form-control" placeholder="ระบุรายละเอียดเพิ่มเติม หรือช่วงเวลาที่สะดวกรับสาย..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit-btn">ส่งข้อมูลนัดหมาย</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Message -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>ส่งข้อมูลเรียบร้อยแล้ว! เจ้าหน้าที่จะติดต่อกลับโดยเร็วที่สุดค่ะ</span>
+  </div>
+
+  <!-- Sticky Line Button -->
+  <a href="https://line.me/R/ti/p/@auraclinic" class="line-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on LINE">
+    <i class="fa-brands fa-line"></i>
+  </a>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>AURA CLINIC</h3>
+          <p>คลินิกเสริมความงามระดับพรีเมียม ดูแลคุณด้วยความใส่ใจและนวัตกรรมที่ได้มาตรฐาน ปลอดภัย มั่นใจได้ 100%</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4>ลิงก์ด่วน</h4>
+          <ul class="footer-links">
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#about">เกี่ยวกับเรา</a></li>
+            <li><a href="#services">บริการของเรา</a></li>
+            <li><a href="#reviews">รีวิวจากลูกค้า</a></li>
+            <li><a href="#contact">ติดต่อทำการรักษา</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-social">
+          <h4>ช่องทางโซเชียลมีเดีย</h4>
+          <div class="footer-social-icons">
+            <a href="https://facebook.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://line.me" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="LINE"><i class="fa-brands fa-line"></i></a>
+            <a href="https://youtube.com" class="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <p style="margin-top: 1rem;">Line ID: @auraclinic</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aura Aesthetics Clinic. All Rights Reserved. | เลขใบอนุญาตประกอบกิจการ 10104xxxx</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
